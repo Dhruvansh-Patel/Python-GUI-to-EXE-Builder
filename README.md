@@ -1,5 +1,5 @@
 # Python-GUI-to-EXE-Builder
-This script will help you to convert your GUI scripts (inculding terminal scripts) into a fully fully functional and professional Windows executable file. It uses the PyInstaller tool.
+This script will help you to convert your GUI scripts (inculding terminal scripts) into a fully  functional and professional Windows executable file. It uses the PyInstaller tool.
 
 ### Prerequisites
 
