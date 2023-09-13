@@ -2,10 +2,10 @@ import os
 from PyInstaller.__main__ import run
 
 def convert_to_exe(script_path):
-    # Get the absolute path of the script
+    #path for script
     script_path = os.path.abspath(script_path)
 
-    # Run PyInstaller programmatically to create the .exe file
+    # using PyInstaller
     spec_file = f"{os.path.splitext(script_path)[0]}.spec"
     run([
         "--onefile",
@@ -13,10 +13,10 @@ def convert_to_exe(script_path):
         script_path
     ])
 
-    # Get the output directory path
+   # output directory
     output_dir = os.path.join(os.path.dirname(script_path), "dist")
 
-    # Find the generated .exe file
+    #check exe file
     exe_file = None
     for file_name in os.listdir(output_dir):
         if file_name.endswith(".exe"):
